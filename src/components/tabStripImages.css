@@ -1,0 +1,10 @@
+.k-content {
+    opacity: 1;
+}
+.k-content.k-hide {
+    opacity: 0;
+}
+.k-content.k-reveal {
+    opacity:1;
+    transition: opacity 500ms;
+}

@@ -1,0 +1,18 @@
+{
+  "extends": "./node_modules/@telerik/eslint-config/index.js",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "no-console": [
+      0
+    ],
+    "react/jsx-uses-vars": 1,
+    "react/react-in-jsx-scope": 1,
+    "space-after-keywords": "",
+    "space-before-keywords": "",
+    "no-arrow-condition": "",
+    "keyword-spacing": "error",
+    "no-confusing-arrow": "error"
+  }
+}
