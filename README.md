@@ -7,9 +7,15 @@ To setup the project:
 npm install
 ```
 
-To run the project:
+To run the project locally:
 ```
 npm run start
+```
+
+The project uses github pages for hosting. To deploy the project do the this locally:
+```
+npm run build
+npm run deploy
 ```
 
 Latest component added on July 10th 2019

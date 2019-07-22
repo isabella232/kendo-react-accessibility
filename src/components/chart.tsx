@@ -158,7 +158,7 @@ class ChartDemo extends React.Component<any, any> {
                     </ChartNavigator>
                 </StockChart>
 
-                <button onClick={this.updateNavigatorRange}>Limit navigator range</button>
+                <button onClick={this.resetNavigatorRange}>Reset navigator range</button>
                 <ul>
                     <li>
                         Base Sparkline chart
@@ -193,7 +193,7 @@ class ChartDemo extends React.Component<any, any> {
         this.setState({ renderAs: (event.target as any).value });
     }
 
-    private updateNavigatorRange = () => {
+    private resetNavigatorRange = () => {
         const from =  new Date('2010/04/05');
         const to = new Date('2010/09/01');
 
