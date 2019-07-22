@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Home from './components/home';
 import Error from './components/error';
 import AnimationDemo from './components/animation';
@@ -52,7 +52,7 @@ import '@progress/kendo-theme-default/dist/all.css';
 class App extends React.Component<{}, any> {
     render() {
         return (
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter basename="/">
             <Switch>
                 <Route path="/" component={Home} exact/>
                 <Route path="/animation" component={AnimationDemo} />
@@ -102,7 +102,7 @@ class App extends React.Component<{}, any> {
                 <Route path="/upload" component={UploadDemo} />
                 <Route component={Error} />
             </Switch>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 }
