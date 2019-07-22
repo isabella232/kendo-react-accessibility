@@ -52,7 +52,7 @@ import '@progress/kendo-theme-default/dist/all.css';
 class App extends React.Component<{}, any> {
     render() {
         return (
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route path="/" component={Home} exact/>
                 <Route path="/animation" component={AnimationDemo} />
